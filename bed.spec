@@ -2,13 +2,13 @@
 Summary:	Bruteforce Exploit Detector
 Summary(pl):	"Brutalny" wykrywacz exploitów
 Name:		bed
-Version:	0.3
-Release:	2
+Version:	0.42
+Release:	1
 License:	GPL v2
 Group:		Networking/Utilities
-Source0:	http://www.kryptocrew.de/snakebyte/bed/%{name}-%{version}.zip
-# Source0-md5:	976bdafd892a582b58fe5d2bba36bc56
-URL:		http://www.kryptocrew.de/snakebyte/bed.html
+Source0:	http://www.snake-basket.de/bed/%{name}-%{version}.tar.bz2
+# Source0-md5:	b2903345f3db03f5a4ef580a3f829486
+URL:		http://www.snake-basket.de/bed/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,20 +25,20 @@ format string, poprzez wysy³anie ogromnej ilo¶ci d³ugich ci±gów znaków
 w bardzo nudny, g³upi sposób... :)
 
 %prep
-%setup -q -c %{name}-%{version}
+%setup -q -n %{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{perl_vendorlib}/mod,%{_bindir}}
+install -d $RPM_BUILD_ROOT{%{perl_vendorlib}/bedmod,%{_bindir}}
 
 install bed.pl		$RPM_BUILD_ROOT%{_bindir}
-install mod/*.pm	$RPM_BUILD_ROOT%{perl_vendorlib}/mod
+install bedmod/*.pm	$RPM_BUILD_ROOT%{perl_vendorlib}/bedmod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc docs/{CHANGES,TODO,FAQ,dummy.pm} README
+%doc docs/{CHANGES,FAQ,HOWTO,TODO,dummy.pm} README
 %attr(755,root,root) %{_bindir}/*.pl
-%{perl_vendorlib}/mod/*.pm
+%attr(755,root,root) %{perl_vendorlib}/bedmod/*.pm
