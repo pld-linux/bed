@@ -11,17 +11,16 @@ URL:		http://www.kryptocrew.de/snakebyte/bed.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a collection of scripts to automatically test
-implementations of different protocols for buffer overflows
-and / or format string vulnerabilities, by sending a lot of
-long strings to a server in a boring, stupid way... :)
+This is a collection of scripts to automatically test implementations
+of different protocols for buffer overflows and / or format string
+vulnerabilities, by sending a lot of long strings to a server in a
+boring, stupid way... :)
 
 %description -l pl
-Jest to kolekcja skryptów do automatycznego testowania 
-implementacji ró¿nych protoko³ów pod k±tem przep³nienia
-buforów i/lub b³êdów typu format string, poprzez wysy³anie
-ogromnej ilo¶ci d³ugich ci±gów znaków w bardzo nudny, g³upi
-sposób... :)
+Jest to kolekcja skryptów do automatycznego testowania implementacji
+ró¿nych protoko³ów pod k±tem przep³nienia buforów i/lub b³êdów typu
+format string, poprzez wysy³anie ogromnej ilo¶ci d³ugich ci±gów znaków
+w bardzo nudny, g³upi sposób... :)
 
 %prep
 %setup -q -c %{name}-%{version}
