@@ -7,6 +7,7 @@ Release:	2
 License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://www.kryptocrew.de/snakebyte/bed/%{name}-%{version}.zip
+# Source0-md5:	976bdafd892a582b58fe5d2bba36bc56
 URL:		http://www.kryptocrew.de/snakebyte/bed.html
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
