@@ -3,11 +3,12 @@ Summary:	Bruteforce Exploit Detector
 Summary(pl):	"Brutalny" wykrywacz exploitów
 Name:		bed
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://www.kryptocrew.de/snakebyte/bed/%{name}-%{version}.zip
 URL:		http://www.kryptocrew.de/snakebyte/bed.html
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,10 +28,10 @@ w bardzo nudny, g³upi sposób... :)
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{perl_sitelib}/mod,%{_bindir}}
+install -d $RPM_BUILD_ROOT{%{perl_vendorlib}/mod,%{_bindir}}
 
 install bed.pl		$RPM_BUILD_ROOT%{_bindir}
-install mod/*.pm	$RPM_BUILD_ROOT%{perl_sitelib}/mod
+install mod/*.pm	$RPM_BUILD_ROOT%{perl_vendorlib}/mod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -39,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc docs/{CHANGES,TODO,FAQ,dummy.pm} README
 %attr(755,root,root) %{_bindir}/*.pl
-%{perl_sitelib}/mod/*.pm
+%{perl_vendorlib}/mod/*.pm
