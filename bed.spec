@@ -41,4 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc docs/{CHANGES,FAQ,HOWTO,TODO,dummy.pm} README
 %attr(755,root,root) %{_bindir}/*.pl
+%dir %{perl_vendorlib}/bedmod
 %attr(755,root,root) %{perl_vendorlib}/bedmod/*.pm
