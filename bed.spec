@@ -18,7 +18,7 @@ boring, stupid way... :)
 
 %description -l pl
 Jest to kolekcja skryptów do automatycznego testowania implementacji
-ró¿nych protoko³ów pod k±tem przep³nienia buforów i/lub b³êdów typu
+ró¿nych protoko³ów pod k±tem przepe³nienia buforów i/lub b³êdów typu
 format string, poprzez wysy³anie ogromnej ilo¶ci d³ugich ci±gów znaków
 w bardzo nudny, g³upi sposób... :)
 
