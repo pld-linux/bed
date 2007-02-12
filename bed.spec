@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Bruteforce Exploit Detector
-Summary(pl):	"Brutalny" wykrywacz exploit體
+Summary(pl.UTF-8):   "Brutalny" wykrywacz exploit贸w
 Name:		bed
 Version:	0.42
 Release:	1
@@ -18,11 +18,11 @@ of different protocols for buffer overflows and / or format string
 vulnerabilities, by sending a lot of long strings to a server in a
 boring, stupid way... :)
 
-%description -l pl
-Jest to kolekcja skrypt體 do automatycznego testowania implementacji
-r罂nych protoko丑w pod k眛em przepe硁ienia bufor體 i/lub b酬d體 typu
-format string, poprzez wysy砤nie ogromnej ilo禼i d硊gich ci眊體 znak體
-w bardzo nudny, g硊pi spos骲... :)
+%description -l pl.UTF-8
+Jest to kolekcja skrypt贸w do automatycznego testowania implementacji
+r贸偶nych protoko艂贸w pod k膮tem przepe艂nienia bufor贸w i/lub b艂臋d贸w typu
+format string, poprzez wysy艂anie ogromnej ilo艣ci d艂ugich ci膮g贸w znak贸w
+w bardzo nudny, g艂upi spos贸b... :)
 
 %prep
 %setup -q -n %{name}
