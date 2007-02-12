@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Bruteforce Exploit Detector
-Summary(pl.UTF-8):   "Brutalny" wykrywacz exploitów
+Summary(pl.UTF-8):	"Brutalny" wykrywacz exploitów
 Name:		bed
 Version:	0.42
 Release:	1
